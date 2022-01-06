@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-s11_@nocdjfg1%yq+7%&ib-vcw&_(14r*cfgkgm5q&1aptx14#'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'projectsneak.herokuapp.com']
 
@@ -137,7 +137,7 @@ REST_FRAMEWORK = {
 
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, "static")
+STATIC_ROOT = 'static'
 
 
 AUTH_USER_MODEL = 'users.User'
