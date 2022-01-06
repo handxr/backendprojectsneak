@@ -147,6 +147,10 @@ SIMPLE_JWT = {
     'ACCESS_TOKEN_LIFETIME': datetime.timedelta(days=1)
 }
 
+STATICFILES_DIRS = [
+    os.path.join('static'),
+]
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
