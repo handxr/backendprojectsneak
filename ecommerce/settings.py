@@ -137,10 +137,7 @@ REST_FRAMEWORK = {
 
 
 STATIC_URL = '/static/'
-STATIC_ROOT = 'static'
-MEDIA_URL = '/uploads/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'uploads')
-
+STATIC_ROOT= './static/'
 
 
 AUTH_USER_MODEL = 'users.User'
@@ -161,3 +158,5 @@ SIMPLE_JWT = {
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
+MEDIA_URL = '/uploads/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'uploads')
