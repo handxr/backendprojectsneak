@@ -148,7 +148,7 @@ SIMPLE_JWT = {
 }
 
 STATICFILES_DIRS = [
-    os.path.join('static'),
+    os.path.join(BASE_DIR, 'static'),
 ]
 
 # Default primary key field type
