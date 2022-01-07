@@ -12,4 +12,4 @@ class ProductApiViewSet(ModelViewSet):
     serializer_class = ProductSerializer
     queryset = Product.objects.all()
     filter_backends = [DjangoFilterBackend]
-    filterset_fields = ['category', 'active']
+    filterset_fields = ['category', 'active', 'title']
